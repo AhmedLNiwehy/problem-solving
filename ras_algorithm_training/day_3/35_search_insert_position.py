@@ -28,9 +28,8 @@ class Solution:
                 high = mid - 1
             else:
                 low = mid + 1
-        if target > nums[len(nums)-1]:
-            return len(nums)
-        elif target > nums[mid]:
+        
+        if target > nums[mid]:
             return mid+1
         elif target < nums[mid]:
             return mid
